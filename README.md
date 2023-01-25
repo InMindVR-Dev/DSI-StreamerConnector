@@ -19,4 +19,4 @@ DEBUG is the ability to ouput value in the console (true or false)
 with no parameters it runs : DSI-StreamerConnector.exe 127.0.0.1 8844 true
 
 
-![alt text](https://github.com/InMindVR-Dev/DSI-StreamerConnector/blob/main/wearable?raw=true)
+![alt text](https://github.com/InMindVR-Dev/DSI-StreamerConnector/blob/main/Wearable.jpg?raw=true)
