@@ -5,7 +5,7 @@ https://wearablesensing.com/
 
 DSI-Streamer can stream data to TCP-IP port. This C# code allows to retreive data from a DSI-Streamer server and simply output it to the console.
 
-##usage DSI-StreamerConnector.exe IPADDRESS PORT DEBUG
+## Usage DSI-StreamerConnector.exe IPADDRESS PORT DEBUG
 
 where : 
 
