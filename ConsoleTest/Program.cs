@@ -22,9 +22,12 @@ namespace DSIStreamer.Connector
 
     class Program
     {
+
+        public static bool end;
+
         static void Main(string[] args)
         {
-
+            end = false;
             string address = "127.0.0.1";
             int port = 8844;
             bool debug = true;
@@ -37,6 +40,7 @@ namespace DSIStreamer.Connector
             thread.Start();
 
             Console.ReadLine();
+            end = true;
         }
 
         public static void Process(string adress, int port, bool debug)
@@ -48,7 +52,7 @@ namespace DSIStreamer.Connector
                 tcpclnt.Connect(adress, port);
                 Stream stm = tcpclnt.GetStream();
 
-                while (true)
+                while (!end)
                 {
                     var data = new byte[12];
                     int ret = stm.Read(data, 0, 12);
